@@ -1,0 +1,506 @@
+@use 'variables';
+@use 'global';
+
+
+
+nav.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu svg {
+    width: 42px;
+    color: black;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Mobile Nav - this is the menu that animates out on 
+the mobile and is blue. it needs to be fixed and not move and display
+above all the other elements with z-index */
+
+
+aside {
+    position: fixed; /* keeps it in single position */
+    z-index: 99;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    width: 50%;
+    padding: 3em;
+    text-align: right;
+    transition: transform .6s;
+    transform: translateX(100%);
+
+    
+
+    img {
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: .3em;
+        cursor: pointer;
+    }
+    ul {
+        margin-top: 6em;
+
+        li {
+            margin-bottom: 1.5em;
+
+            a {
+                color: black;
+                font-size: 2.6rem;
+            }
+        }
+    }
+
+}
+
+.pix {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    
+}
+
+.cta img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.2rem;
+}
+
+.heading-pix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+
+}
+.headingAndPix {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 4em;
+}
+
+.cards img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+
+}
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-left: 3em;
+    padding-top: 3em;
+}
+
+.cta-main {
+    background: var(--secondary-color);
+    padding: .4em 3em;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 500px;
+    margin: 2em 0;
+
+}
+.logos {
+    height: 200px;
+    background: #00000037;
+    padding: 8em;
+    
+}
+
+.row1, .row2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 3em;
+}
+
+.row1 img {
+    width: 100px;
+    margin: 0;
+    
+}
+.row2 img {
+    width: 100px;
+    margin: 0;
+    
+}
+
+.wrapper2 {
+    // height: 100vh;
+    // background-color: purple;
+    margin: 2em;
+}
+
+
+.coupon-grid {
+    margin-top: -10em;
+    margin-bottom: 5em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "image1"
+    "image2"
+    "image3"
+    ;
+
+    .shoe01 {
+        // this is the first image 'shoe01'
+        // background-color: #9BC588;
+        background: url('/assets/shoe01.jpg') 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        border: 2px solid #000;
+        box-shadow: 4px 4px 0px 0px #000;
+        // background: rebeccapurple;
+        
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        
+
+        .description {
+            background-color: white;
+            flex-basis: 80%;
+            padding-left: 2em;
+        }
+        .price {
+            background-color: black;
+            color: white;
+            flex-basis: 20%;
+            text-align: center;
+        }
+
+    }
+
+}
+    // attempt at redoing the images with .divs
+    .image1 {
+        border-radius: 4px;
+        border: 2px solid #000;
+        background: url('/assets/image-01.jpg'), lightgray 50% / cover no-repeat, #9BC588;
+        box-shadow: 4px 4px 0px 0px #000;
+        grid-area: image1;
+        height: 200px;
+        z-index: 100;
+    }
+
+
+    // end of div image for grid items aka: coupon images
+.coupon-grid img {
+    width: 100%;
+}
+
+.image1 {
+    grid-area: image1;
+}
+.image2 {
+    grid-area: image2;
+}
+.image3 {
+    grid-area: image3;
+}
+
+
+
+
+
+// Tablet
+@media only screen and (min-width: 1024px) {
+
+    .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+
+    .cta-btn {
+        color: black;
+        font-size: 2.6rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        background: var(--cta-button);
+        padding: 0.3em 1.2em;
+        border-radius: .2em;
+        border: 1px solid black;
+    }
+
+    .cta-btn a img {
+        margin-left: .3em;
+    }
+    
+
+    aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: inherit;
+        height: auto;
+        background: unset;
+        padding: 2em;
+        transform: unset;
+        text-align: inherit;
+        transition: unset;
+        // background-color: black;
+        border-radius: 1em;
+
+
+        img {
+            background: unset;
+            cursor: unset;
+        }
+        nav ul {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 3em;
+            
+
+            li {
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                gap: 0.3em;
+
+                // img {
+                //     display: block !important;
+                // }
+
+                a {
+                    font-size: 2rem;
+                    color: black;
+                }
+            }
+
+        }
+    }
+
+    
+    h1 {
+        text-align: left;
+        font-size: 4.5rem;
+    }
+
+    .heading-pix {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2em;
+
+    }
+    .headingAndPix {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding-bottom: 4em;
+        padding-left: 4em;
+        padding-top: 4em;
+        max-width: 70vw;
+        position:relative;
+    }
+
+    .headingAndPix:before {
+        position: absolute;
+        content: '';
+        background: url('/assets/stars.png');
+        background-position: cover;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 200px;
+        top: 5rem;
+        left: 74rem;
+        font-size: 15rem;
+        color: rgba(0,0,0,0.05)
+    }
+    .features {
+        margin-top: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4em;
+        
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        width: 30%;
+    }
+    .cta-main {
+        flex-basis: 33%;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 3em;
+    }
+    .logos {
+        height: 20vh;
+        background: #000000;
+        // padding: 8em;
+        
+    }
+
+    .row1, .row2{
+        display: flex;
+        // justify-content: space-between;
+        align-items: flex-start;
+        gap: 6em;
+        margin-bottom: 3em;
+    }
+
+
+    .coupon-grid {
+        margin-top: -20em;
+        margin-bottom: 5em;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "image1 image2"
+        "image4 image3"
+        "image5 image6"
+        ;
+
+
+        .image1 {
+            grid-area: image1;
+        }
+        .image2 {
+            grid-area: image2;
+        }
+        .image3 {
+            grid-area: image3;
+        }
+        .image4 {
+            display: block;
+            grid-area: image4;
+        }
+        .image5 {
+            display: block;
+            grid-area: image5;
+        }
+        .image6 {
+            display: block;
+            grid-area: image6;
+        }
+    }
+    
+
+}
+
+
+
+
+
+
+
+// Desktop
+
+@media only screen and (min-width:1400px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: 3em auto;
+        padding: 0 2em;
+    }
+    .wrapper2 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    aside {
+        width: 10%;
+        flex-grow: 3;
+        min-width: 250px;
+        padding: 2em;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+
+            ul {
+                justify-content: space-around;
+                flex-direction: row;
+                gap: 2em;
+
+                li {
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5em;
+                }
+            }
+        }
+        
+    }
+
+    .coupon-grid {
+        height: 500px;
+        margin-top: -20em;
+        margin-bottom: 5em;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+        "image1 image1 image2 image3"
+        "image4 image5 image5 image6"
+        ;
+
+        // .coupon-grid img {
+            
+        // }
+
+        
+        .image2 {
+            grid-area: image2;
+        }
+        .image3 {
+            grid-area: image3;
+        }
+        .image4 {
+            grid-area: image4;
+        }
+        .image5 {
+            
+            grid-area: image5;
+        }
+        .image6 {
+            
+            grid-area: image6;
+        }
+    }
+    
+
+
+
+}
+

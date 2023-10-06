@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couply CouponGen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- a DIV 'wrapper' to wrap all the content and center overall -->
+    <div class="wrapper">
+        <!-- For CSS, this is a the LOGO on the left
+        and the 'header-right' on the right -->
+        <header class="primary">
+            
+                <nav class="nav-main">
+                    <div class="logo">
+                        <img src="assets/couply-logo.svg" alt="Couply Logo">
+                    </div>
+                    <!-- This is the mobile menu that is styles BLUE,
+                    then hidden on tablet, then place on the left of the grid
+                    on DESKToP (Home, Messages, Account, Support)-->
+                    
+                    <aside>
+                        <img src="assets/mobile-exit.svg" class="exit hide-tablet" alt="Exit mobile nav">
+
+                        <nav class="tablet-nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Coupons</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                            
+                    </aside>
+                        
+                    <div class="cta-btn hide-mobile">
+                        
+                            <a href="#">Start saving
+                                <img src="assets/Arrow 1.png" alt="">
+                            </a>
+                        </div>
+                    
+                    
+
+
+                    <!-- Hamburger Menu -->
+                    <a href="#" class="menu hide-tablet">
+                        <svg  viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 27H4.5V24H18V27ZM31.5 19.5H4.5V16.5H31.5V19.5ZM31.5 12H18V9H31.5V12Z" fill="black"/>
+                        </svg>
+                            
+                    </a>
+                </nav>
+                
+            
+        </header>
+
+        <main>
+            <div class="hero">
+                <div class="headingAndPix">
+                    <h1 class="heading">
+                        Shopping with coupons, applied automatically!
+                    </h1>
+
+                    <div class="heading-pix">
+                        <p>Used by over 500,000 peeps</p>
+                        <div class="pix">
+                            <img src="assets/image-01.png" alt="customer">
+                            <img src="assets/image-02.png" alt="customer">
+                            <img src="assets/image-03.png" alt="customer">
+                            <img src="assets/image-04.png" alt="customer">
+                            <img src="assets/image-05.png" alt="customer">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="features">
+                    <div class="cards">
+                        <img src="/assets/one.png" alt="one">
+                        <p>Download the Extension for Chrome or Firefox</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/assets/two.png" alt="one">
+                        <p>Visit your favorite online retailers.</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/assets/three.png" alt="one">
+                        <p><span>Save! </span>Apply coupons from the toolbar.</p>
+                    </div>
+
+                    <button class="cta-main">Install Extension</button>
+                    
+                </div>
+
+                
+                
+
+
+            </div>
+                            
+        </main>
+    </div>
+    <!-- end of .wrapper so Logos section can extend full width -->
+        <div class="logos">
+            <div class="row1">
+                <img src="/assets/amazon.svg" alt="Amazon Logo">
+                <img src="/assets/Best Buy.svg" alt="Amazon Logo">
+            </div>
+            <div class="row2">
+                <img src="/assets/Shopify.svg" alt="Amazon Logo">
+                <img src="/assets/Walmart.svg" alt="Amazon Logo">
+            </div>
+            
+        </div>
+    <div class="wrapper2">
+        <div class="coupon-grid">
+            <div class="shoe01">
+                <div class="description">
+                    <h2>Women's Nike Shoes</h2>
+                </div>
+                <div class="price">
+                    <h2>$69</h2>
+                </div>
+            </div>
+
+            <!-- <img src="/assets/image-1.png" class="image1" alt="nike shoes"> -->
+            <img src="/assets/image-2.png" class="image2" alt="nike shoes">
+            <img src="/assets/image-3.png" class="image3" alt="nike shoes">
+            <img src="/assets/image4.png" class="image4 hide-mobile" alt="nike shoes">
+            <img src="/assets/image-5.png" class="image5 hide-mobile" alt="nike shoes">
+            <img src="/assets/image-6.png" class="image6 hide-mobile" alt="nike shoes">
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu')
+        const exitBtn = document.querySelector('.exit')
+        const menu = document.querySelector('aside')
+
+        menuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.classList.toggle('toggle-menu')
+
+        })
+        exitBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            menu.classList.toggle('toggle-menu');
+        })
+
+    </script>
+
+
+</body>
+</html>
