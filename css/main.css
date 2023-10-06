@@ -193,7 +193,7 @@ h1 {
 
 .logos {
   height: 200px;
-  background: rgba(0, 0, 0, 0.2156862745);
+  background: #000000;
   padding: 8em;
 }
 
@@ -212,13 +212,13 @@ h1 {
 }
 
 .row1 img {
-  width: 100px;
-  margin: 0;
+  margin: 0 auto;
+  height: 40px;
 }
 
 .row2 img {
-  width: 100px;
-  margin: 0;
+  margin: 0 auto;
+  height: 40px;
 }
 
 .wrapper2 {
