@@ -145,83 +145,122 @@ h1 {
     
 }
 
-.wrapper2 {
-    // height: 100vh;
-    // background-color: purple;
-    margin: 2em;
-}
+// .wrapper2 {
+    
+//     margin: 2em;
+//     max-width: 90vw;
+// }
 
 
 .coupon-grid {
-    margin-top: -10em;
-    margin-bottom: 5em;
-    display: grid;
+    max-width: 500px;
+    width: 90%;
+    margin: -10em auto 5em auto;
+    // margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    
     gap: 2em;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "image1"
-    "image2"
-    "image3"
-    ;
+    
+}
 
-    .shoe01 {
-        // this is the first image 'shoe01'
-        // background-color: #9BC588;
-        background: url('../assets/shoe01.jpg') 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 4px;
-        border: 2px solid #000;
-        box-shadow: 4px 4px 0px 0px #000;
-        // background: rebeccapurple;
+.shoe01 {
+    // this is the first image 'shoe01'
+    max-width: 100%;
+    
+    background-color: #9BC588;
+    background: url('../assets/shoe01.jpg') 50%;
+    height: 200px;
+    max-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px 0px #000;
+    // background: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    // this align-items start really messed me up: could not figure out why
+    // the description white background would extend beyond setting max-width
+    // align-items: start;
+    justify-content: space-between;
+
+    .description {
+        background-color: white;
+        padding:  1.4em 3em;
         
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
+        margin: 0;
         
 
-        .description {
-            background-color: white;
-            flex-basis: 80%;
-            padding-left: 2em;
+        h2 {
+            margin: 0;
         }
-        .price {
-            background-color: black;
-            color: white;
-            flex-basis: 20%;
-            text-align: center;
-        }
+    }
 
+    .price {
+        background-color: black;
+        color: white;
+        align-self: flex-end;
+        text-align: center;
+        padding: 0 3em;
     }
 
 }
-    // attempt at redoing the images with .divs
-    .image1 {
-        border-radius: 4px;
-        border: 2px solid #000;
-        background: url('/assets/image-01.jpg'), lightgray 50% / cover no-repeat, #9BC588;
-        box-shadow: 4px 4px 0px 0px #000;
-        grid-area: image1;
-        height: 200px;
-        z-index: 100;
+.arrows01 {
+    // this is the first image 'shoe01'
+    max-width: 100%;
+    
+    background-color: #9BC588;
+    background: url('../assets/arrows01.jpg') 50%;
+    height: 200px;
+    max-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px 0px #000;
+    // background: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    // this align-items start really messed me up: could not figure out why
+    // the description white background would extend beyond setting max-width
+    // align-items: start;
+    justify-content: space-between;
+
+    .description {
+        background-color: white;
+        padding:  1.4em 3em;
+        
+        margin: 0;
+        
+
+        h2 {
+            margin: 0;
+        }
     }
 
+    .price {
+        background-color: black;
+        color: white;
+        align-self: flex-end;
+        text-align: center;
+        padding: 0 3em;
+    }
+
+}
 
     // end of div image for grid items aka: coupon images
-.coupon-grid img {
-    width: 100%;
-}
+// .coupon-grid img {
+//     width: 100%;
+// }
 
-.image1 {
-    grid-area: image1;
-}
-.image2 {
-    grid-area: image2;
-}
-.image3 {
-    grid-area: image3;
-}
+
+// .image2 {
+//     grid-area: image2;
+// }
+// .image3 {
+//     grid-area: image3;
+// }
 
 
 
