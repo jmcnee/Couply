@@ -31,9 +31,9 @@ p {
 }
 svg {width: 100%; }
 
-.hide-mobile {
-    display: none;
-}
+// .hide-mobile {
+//     display: none !important;
+// }
 
 .toggle-menu {
     // this is the class that allows hiding of menu with javascript

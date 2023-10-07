@@ -45,10 +45,6 @@ svg {
   width: 100%;
 }
 
-.hide-mobile {
-  display: none;
-}
-
 .toggle-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -315,6 +311,170 @@ h1 {
   padding: 0 3em;
 }
 
+.headphone01 {
+  max-width: 100%;
+  background-color: #9BC588;
+  background: url("../assets/headphone.jpg") 50%;
+  height: 200px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 0px 0px #000;
+          box-shadow: 4px 4px 0px 0px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.headphone01 .description {
+  background-color: white;
+  padding: 1.4em 3em;
+  margin: 0;
+}
+.headphone01 .description h2 {
+  margin: 0;
+}
+.headphone01 .price {
+  background-color: black;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.shoes02 {
+  max-width: 100%;
+  background-color: #9BC588;
+  background: url("../assets/shoes02.jpg") 50%;
+  height: 200px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 0px 0px #000;
+          box-shadow: 4px 4px 0px 0px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.shoes02 .description {
+  background-color: white;
+  padding: 1.4em 3em;
+  margin: 0;
+}
+.shoes02 .description h2 {
+  margin: 0;
+}
+.shoes02 .price {
+  background-color: black;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.sunglasses01 {
+  max-width: 100%;
+  background-color: #9BC588;
+  background: url("../assets/sungleasses01.jpg") 50%;
+  height: 200px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 0px 0px #000;
+          box-shadow: 4px 4px 0px 0px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sunglasses01 .description {
+  background-color: white;
+  padding: 1.4em 3em;
+  margin: 0;
+}
+.sunglasses01 .description h2 {
+  margin: 0;
+}
+.sunglasses01 .price {
+  background-color: black;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.wellness01 {
+  max-width: 100%;
+  background-color: #9BC588;
+  background: url("../assets/wellness01.jpg") 50%;
+  height: 200px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 0px 0px #000;
+          box-shadow: 4px 4px 0px 0px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wellness01 .description {
+  background-color: white;
+  padding: 1.4em 3em;
+  margin: 0;
+}
+.wellness01 .description h2 {
+  margin: 0;
+}
+.wellness01 .price {
+  background-color: black;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.hide-mobile {
+  display: none;
+}
+
 @media only screen and (min-width: 1024px) {
   .wrapper {
     max-width: 1000px;
@@ -486,6 +646,7 @@ h1 {
     margin-bottom: 3em;
   }
   .coupon-grid {
+    max-width: 800px;
     margin-top: -20em;
     margin-bottom: 5em;
     display: grid;
@@ -504,15 +665,21 @@ h1 {
     grid-area: image3;
   }
   .coupon-grid .image4 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     grid-area: image4;
   }
   .coupon-grid .image5 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     grid-area: image5;
   }
   .coupon-grid .image6 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     grid-area: image6;
   }
 }
